@@ -29,7 +29,7 @@ export default function Footer() {
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <a
-                href="#register"
+                href="https://events.mlh.com/events/15402-hacktoberfest-meetup-phagwara-x-aws-student-builder-group-at-lpu"
                 className="w-fit border-2 border-[#063c35] bg-[#063c35] px-7 py-4 font-mono text-[10px] font-bold uppercase tracking-[0.25em] text-[#f5f0df] transition-colors hover:bg-transparent hover:text-[#063c35]"
               >
                 Join Hacktoberfest ↗

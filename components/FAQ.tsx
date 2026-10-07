@@ -139,7 +139,7 @@ export default function FAQ() {
           </div>
 
           <a
-            href="#register"
+            href="https://events.mlh.com/events/15402-hacktoberfest-meetup-phagwara-x-aws-student-builder-group-at-lpu"
             className="group flex w-fit items-center gap-5 border-2 border-[#f5b82e] bg-[#f5b82e] px-7 py-4 font-mono text-[10px] font-bold uppercase tracking-[0.25em] text-[#063c35] transition-colors hover:bg-transparent hover:text-[#f5b82e]"
           >
             Join Hacktoberfest

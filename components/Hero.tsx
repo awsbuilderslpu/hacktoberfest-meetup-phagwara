@@ -87,7 +87,7 @@ export default function Hero() {
 
             <div className="relative z-30 mt-7 flex flex-col gap-3 sm:flex-row">
               <a
-                href="#register"
+                href="https://events.mlh.com/events/15402-hacktoberfest-meetup-phagwara-x-aws-student-builder-group-at-lpu"
                 className="w-fit bg-[#f0443e] px-6 py-3 font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-[#f5f0df] transition-transform hover:-translate-y-1"
               >
                 Register Now ↗

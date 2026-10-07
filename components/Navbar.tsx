@@ -64,7 +64,7 @@ export default function Navbar() {
         </div>
 
         <a
-          href="#register"
+          href="https://events.mlh.com/events/15402-hacktoberfest-meetup-phagwara-x-aws-student-builder-group-at-lpu"
           className="group relative border-2 border-[#063c35] bg-[#f5b82e] px-5 py-2.5 font-mono text-[9px] font-bold uppercase tracking-[0.2em] text-[#063c35] transition-all hover:bg-[#f0443e] hover:text-[#f5f0df]"
         >
           Register
