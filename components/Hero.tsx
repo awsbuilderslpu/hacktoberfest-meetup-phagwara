@@ -1,171 +1,173 @@
+const registrationUrl =
+  "https://events.mlh.com/events/15402-hacktoberfest-meetup-phagwara-x-aws-student-builder-group-at-lpu";
+
 export default function Hero() {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-[#f5f0df] text-[#063c35]">
-      <div className="pointer-events-none absolute inset-0 opacity-[0.08]">
-        <div className="absolute left-[8%] top-[12%] h-1 w-1 rounded-full bg-[#063c35] shadow-[40px_20px_0_#063c35,90px_5px_0_#063c35,150px_35px_0_#063c35,220px_10px_0_#063c35,310px_45px_0_#063c35,420px_15px_0_#063c35]" />
-      </div>
+    <section className="overflow-hidden bg-[#faf9f6] px-5 text-[#171717] sm:px-8 lg:px-14">
+      <div className="mx-auto max-w-[1600px]">
+        <header className="flex flex-wrap items-center justify-between gap-4 border-b-2 border-black py-4">
+          <a
+            href="https://hacktoberfest.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Hacktoberfest official website"
+            className="text-lg font-black uppercase tracking-[-0.07em] sm:text-2xl"
+          >
+            HACKT<span className="text-[#ef3028]">Ø</span>BERFEST
+            <span className="ml-1 bg-black px-1.5 py-0.5 align-middle text-xs text-white">
+              26
+            </span>
+          </a>
 
-      <div className="pointer-events-none absolute right-0 top-0 h-[42vh] w-[42vh] max-h-[520px] max-w-[520px] rounded-full bg-[#f5b82e] opacity-90" />
+          <div className="flex items-center gap-3 sm:gap-5">
+            <img
+              src="/mlh.png"
+              alt="Major League Hacking"
+              className="h-7 w-auto max-w-[75px] object-contain sm:h-9"
+            />
+            <span className="font-bold text-black/40">×</span>
+            <img
+              src="/devto.png"
+              alt="DEV"
+              className="h-6 w-auto max-w-[55px] object-contain sm:h-8"
+            />
+          </div>
 
-      <div className="pointer-events-none absolute right-[4%] top-[8%] hidden h-16 w-16 bg-[#7ec8ed] md:block" />
+          <a
+            href="https://linkedin.com/company/awsbuilderslpu"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2"
+          >
+            <img
+              src="/aws_sbg.png"
+              alt="AWS Student Builder Group"
+              className="h-9 w-9 object-contain sm:h-11 sm:w-11"
+            />
+            <span className="hidden text-xs font-bold leading-snug sm:block sm:text-sm">
+              AWS Student Builder Group
+              <br />
+              Lovely Professional University
+            </span>
+          </a>
+        </header>
 
-      <div className="pointer-events-none absolute right-[11%] top-[19%] hidden h-9 w-9 bg-[#f0443e] md:block" />
-
-      <div className="pointer-events-none absolute right-[16%] top-[12%] hidden h-5 w-5 bg-[#f0443e] md:block" />
-
-      <div className="pointer-events-none absolute left-0 top-[48%] h-20 w-20 bg-[#f0443e] [clip-path:polygon(0_0,100%_100%,0_100%)]" />
-
-      <div className="pointer-events-none absolute bottom-[8%] left-[8%] h-20 w-20 bg-[#7ec8ed] [clip-path:polygon(0_0,100%_100%,0_100%)]" />
-
-      <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl items-center px-6 py-28 lg:px-12">
-        <div className="grid w-full gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div className="relative z-30">
-            <div className="mb-6 flex items-center gap-4">
-              <span className="font-mono text-[9px] font-bold uppercase tracking-[0.3em] text-[#063c35]/55">
-                Hacktoberfest 2026
+        <div className="grid gap-0 lg:grid-cols-[1fr_340px]">
+          <div className="py-10 sm:py-14 lg:py-16 lg:pr-8">
+            <div className="mb-6 flex flex-wrap items-center gap-3">
+              <span className="bg-[#ffc329] px-3 py-1.5 font-mono text-[10px] font-bold uppercase tracking-[0.15em] sm:text-xs">
+                Open Source · Community · Builders
               </span>
-
-              <span className="font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-[#f0443e]">
-                 | Open Source
+              <span className="font-mono text-[10px] font-bold uppercase tracking-[0.12em] text-black/45 sm:text-xs">
+                Phagwara, India
               </span>
             </div>
 
-            <h1 className="relative z-30 font-black uppercase leading-[0.82] tracking-[-0.065em]">
-              <span className="block text-[clamp(3rem,6.5vw,6rem)]">
-                Hacktoberfest
-              </span>
-
-              <span className="mt-1 block text-[clamp(3rem,6.5vw,6rem)]">
-                Meetup
-              </span>
-
-              <span className="mt-2 block text-[clamp(2.4rem,5vw,4.5rem)] text-[#f0443e]">
-                Phagwara
-              </span>
+            <h1 className="text-[clamp(3.5rem,10vw,9.5rem)] font-black uppercase leading-[0.77] tracking-[-0.09em]">
+              Hacktober
+              <span className="block">fest</span>
             </h1>
 
-            <div className="relative z-30 mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 border-y-2 border-[#063c35] py-4">
-              <div>
-                <p className="font-mono text-[8px] font-bold uppercase tracking-[0.3em] text-[#063c35]/45">
-                  Date
-                </p>
-
-                <p className="mt-1 text-lg font-black uppercase tracking-[-0.02em]">
-                  23 October 2026
-                </p>
+            <div className="mt-5 flex flex-col gap-4 sm:mt-7 sm:flex-row sm:items-stretch">
+              <div className="flex flex-1 items-center bg-[#ef3028] px-5 py-5 text-white sm:px-7 sm:py-6">
+                <div>
+                  <p className="font-mono text-[10px] font-bold uppercase tracking-[0.16em] text-white/75">
+                    The community meetup
+                  </p>
+                  <p className="mt-1 text-3xl font-black uppercase leading-none tracking-[-0.06em] sm:text-4xl lg:text-5xl">
+                    Phagwara.
+                  </p>
+                </div>
               </div>
 
-              <span className="hidden h-8 w-px bg-[#063c35]/20 sm:block" />
-
-              <div>
-                <p className="font-mono text-[8px] font-bold uppercase tracking-[0.3em] text-[#063c35]/45">
-                  Location
-                </p>
-
-                <p className="mt-1 text-lg font-black uppercase tracking-[-0.02em]">
-                  Phagwara, Punjab
-                </p>
+              <div className="flex items-center gap-4 bg-[#ffc329] px-5 py-4 sm:min-w-[190px] sm:flex-col sm:items-start sm:justify-center sm:gap-1 sm:px-6">
+                <span className="text-5xl font-black leading-none tracking-[-0.08em] sm:text-6xl">
+                  23
+                </span>
+                <div>
+                  <p className="font-mono text-xs font-bold uppercase tracking-[0.12em]">
+                    October
+                  </p>
+                  <p className="mt-1 text-sm font-bold">2026</p>
+                </div>
               </div>
             </div>
 
-            <div className="relative z-30 mt-5 flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
-              <span className="font-mono text-[8px] font-bold uppercase tracking-[0.3em] text-[#063c35]/45">
-                Hosted with
-              </span>
-
-              <span className="hidden h-4 w-px bg-[#063c35]/25 sm:block" />
+            <div className="mt-6 flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
+              <p className="max-w-lg text-sm leading-6 text-black/65 sm:text-base sm:leading-7">
+                Build in public. Contribute to open source. Meet developers
+                exploring AI, cloud technology, and the future of building.
+              </p>
 
               <a
-                href="https://linkedin.com/company/awsbuilderslpu"
+                href={registrationUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-mono text-[10px] font-bold uppercase tracking-[0.12em] text-[#063c35] transition-colors hover:text-[#f0443e]"
+                className="inline-flex w-fit shrink-0 items-center gap-5 bg-black px-6 py-4 font-mono text-[10px] font-bold uppercase tracking-[0.13em] text-white transition-colors hover:bg-[#2055a5] sm:text-xs"
               >
-                AWS Student Builder Group at LPU ↗
-              </a>
-            </div>
-
-            <div className="relative z-30 mt-7 flex flex-col gap-3 sm:flex-row">
-              <a
-                href="https://events.mlh.com/events/15402-hacktoberfest-meetup-phagwara-x-aws-student-builder-group-at-lpu"
-                className="w-fit bg-[#f0443e] px-6 py-3 font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-[#f5f0df] transition-transform hover:-translate-y-1"
-              >
-                Register Now ↗
+                Register Now
+                <span aria-hidden="true" className="text-lg">↗</span>
               </a>
 
               <a
-                href="#about"
-                className="w-fit border-2 border-[#063c35] px-6 py-3 font-mono text-[9px] font-bold uppercase tracking-[0.25em] text-[#063c35] transition-colors hover:bg-[#063c35] hover:text-[#f5f0df]"
+                href="YOUR_CALL_FOR_SPEAKERS_URL"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex w-fit items-center gap-5 border-2 border-[#2055a5] px-6 py-[14px] font-mono text-[10px] font-bold uppercase tracking-[0.13em] text-[#2055a5] transition-colors hover:bg-[#2055a5] hover:text-white sm:text-xs"
               >
-                Explore ↓
+                Call for Speakers
+                <span aria-hidden="true" className="text-lg">↗</span>
               </a>
+              
             </div>
           </div>
 
-          <div className="relative z-10 hidden min-h-[500px] lg:block">
-            <div className="absolute right-[5%] top-[4%] h-[390px] w-[390px] rounded-full bg-[#f5b82e]" />
-
-            <div className="absolute right-0 top-[13%] h-[280px] w-[360px]">
-              <div className="absolute bottom-0 left-0 h-[190px] w-[330px] bg-[#063c35] [clip-path:polygon(0_100%,8%_38%,30%_20%,45%_45%,65%_8%,100%_35%,100%_100%)]" />
-
-              <div className="absolute bottom-[65px] left-[70px] h-[170px] w-[180px] border-[14px] border-[#f5f0df] bg-[#063c35]">
-                <div className="absolute left-[30px] top-[45px] h-24 w-2 bg-[#f5f0df]" />
-                <div className="absolute left-[58px] top-[45px] h-24 w-2 bg-[#f5f0df]" />
-                <div className="absolute left-[86px] top-[45px] h-24 w-2 bg-[#f5f0df]" />
-                <div className="absolute left-[114px] top-[45px] h-24 w-2 bg-[#f5f0df]" />
-              </div>
-
-              <div className="absolute bottom-0 left-[15px] h-20 w-10 bg-[#063c35]" />
-              <div className="absolute bottom-0 right-[35px] h-28 w-12 bg-[#063c35]" />
-            </div>
-
-            <div className="absolute bottom-[55px] right-[5%] h-[190px] w-[310px] rotate-[-4deg] border-[10px] border-[#063c35] bg-[#063c35] shadow-[12px_12px_0_#f0443e]">
-              <div className="p-6 font-mono text-sm leading-7">
-                <p className="text-[#7ec8ed]">$ git status</p>
-                <p className="mt-2 text-[#f5f0df]">
-                  ready to contribute
-                </p>
-                <p className="text-[#f5b82e]">
-                  &gt; open source
-                </p>
-                <p className="text-[#f0443e]">
-                  &gt; community
-                </p>
-                <p className="text-[#7ec8ed]">
-                  &gt; ship it_
-                </p>
-              </div>
-            </div>
-
-            <div className="absolute bottom-[10px] left-[15%] flex flex-col">
-              <div className="h-8 w-44 bg-[#f0443e]" />
-              <div className="h-8 w-40 bg-[#f5b82e]" />
-              <div className="h-8 w-48 bg-[#7ec8ed]" />
-            </div>
-
-            <div className="absolute right-[8%] top-[2%] rotate-12">
-              <span className="font-mono text-5xl font-black text-[#f0443e]">
-                {"</>"}
+          <aside className="relative flex flex-col justify-between overflow-hidden bg-[#2055a5] p-6 text-white sm:p-8 lg:my-8 lg:ml-3">
+            <div className="flex items-start justify-between gap-3">
+              <span className="font-mono text-[10px] font-bold uppercase tracking-[0.15em] text-white/70">
+                Save the date
+              </span>
+              <span className="bg-[#ffc329] px-2 py-1 text-xs font-black text-black">
+                2026
               </span>
             </div>
-          </div>
+
+            <div className="py-10 lg:py-0">
+              <p className="text-6xl font-black uppercase leading-[0.8] tracking-[-0.08em] sm:text-7xl">
+                Code
+                <span className="block text-[#ffc329] text-5xl">Together.</span>
+              </p>
+
+              <div className="mt-8 border-t border-white/30 pt-5">
+                <p className="text-sm font-bold">
+                  Lovely Professional University
+                </p>
+                <p className="mt-1 text-sm text-white/65">
+                  Phagwara, Punjab, India
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center justify-between border-t border-white/30 pt-4">
+              <span className="font-mono text-[10px] font-bold uppercase tracking-[0.12em]">
+                Learn · Build · Contribute
+              </span>
+              <span aria-hidden="true" className="text-2xl text-[#ffc329]">
+                ✳
+              </span>
+            </div>
+          </aside>
         </div>
-      </div>
 
-      <div className="absolute bottom-7 left-8 hidden font-mono text-[9px] font-bold uppercase tracking-[0.3em] text-[#063c35]/40 md:block">
-        LEARN
-        <br />
-        BUILD
-        <br />
-        CONTRIBUTE
-      </div>
-
-      <div className="absolute bottom-7 right-8 hidden text-right font-mono text-[9px] font-bold uppercase tracking-[0.3em] text-[#063c35]/40 md:block">
-        COMMUNITY
-        <br />
-        OPEN SOURCE
-        <br />
-        2026
+        <div className="flex flex-col gap-2 border-t-2 border-black py-3 text-[10px] font-bold uppercase tracking-[0.12em] text-black/50 sm:flex-row sm:items-center sm:justify-between">
+          <span>Hosted by AWS Student Builder Group at LPU</span>
+          <a
+            href="https://hacktoberfest.awslpu.in"
+            className="transition-colors hover:text-[#ef3028]"
+          >
+            hacktoberfest.awslpu.in ↗
+          </a>
+        </div>
       </div>
     </section>
   );

@@ -1,207 +1,161 @@
+const details = [
+  { label: "DATE", value: "23 October 2026" },
+  { label: "LOCATION", value: "Lovely Professional University, Phagwara" },
+  { label: "FORMAT", value: "In-person meetup" },
+];
+
+const sessions = [
+  { time: "09:30–10:00", title: "Check-in & Welcome", tag: "COMMUNITY" },
+  { time: "10:00–11:00", title: "Opening Session / Open Source 101", tag: "OPEN SOURCE" },
+  { time: "11:00–12:00", title: "Building in the Age of AI", tag: "AI" },
+  { time: "12:00–13:00", title: "From Code to Cloud", tag: "CLOUD" },
+  { time: "13:00–14:00", title: "Community Break", tag: "BREAK" },
+  { time: "14:00–15:00", title: "Contribution Sprint", tag: "HANDS-ON" },
+  { time: "15:00–16:00", title: "Developer Journey / Career Session", tag: "CAREERS" },
+  { time: "16:00–16:30", title: "Show & Tell, Closing & Community Photo", tag: "WRAP-UP" },
+];
+
+const tracks = [
+  "Open Source Fundamentals",
+  "Git & GitHub",
+  "Building in the Age of AI",
+  "From Code to Cloud",
+  "Contribution Sprint",
+];
+
 export default function Event() {
-  const details = [
-    {
-      number: "01",
-      label: "DATE",
-      value: "23 OCTOBER 2026",
-      accent: "#f5b82e",
-    },
-    {
-      number: "02",
-      label: "VENUE",
-      value: "LOVELY PROFESSIONAL UNIVERSITY",
-      accent: "#7ec8ed",
-    },
-    {
-      number: "03",
-      label: "FORMAT",
-      value: "IN-PERSON MEETUP",
-      accent: "#f0443e",
-    },
-    {
-      number: "04",
-      label: "FOR",
-      value: "STUDENTS · DEVELOPERS · BUILDERS",
-      accent: "#f5b82e",
-    },
-  ];
-
-  const experiences = [
-    {
-      title: "LEARN",
-      text: "Discover open source workflows, tools, and ideas from people who actively build and contribute.",
-      accent: "#f5b82e",
-    },
-    {
-      title: "CONTRIBUTE",
-      text: "Work on real projects, collaborate with others, and turn your skills into meaningful contributions.",
-      accent: "#f0443e",
-    },
-    {
-      title: "CONNECT",
-      text: "Meet developers, students, contributors, and builders from the local open source community.",
-      accent: "#7ec8ed",
-    },
-  ];
-
   return (
     <section
       id="event"
-      className="relative overflow-hidden bg-[#063c35] px-6 py-28 text-[#f5f0df] lg:px-12"
+      className="overflow-hidden bg-[#111111] px-5 py-14 text-white sm:px-8 sm:py-20 lg:px-14 lg:py-24"
     >
-      <div className="mx-auto max-w-7xl">
-        <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+      <div className="mx-auto max-w-[1600px]">
+        <div className="grid gap-6 border-b border-white/20 pb-8 lg:grid-cols-[1fr_0.7fr] lg:items-end lg:gap-12">
           <div>
-            <p className="mb-5 font-mono text-[9px] font-bold uppercase tracking-[0.35em] text-[#7ec8ed]">
-              02 — The Event
+            <p className="mb-5 inline-flex bg-[#ffc329] px-3 py-1.5 font-mono text-[10px] font-bold uppercase tracking-[0.15em] text-black sm:text-xs">
+              The Meetup · 23.10.2026
             </p>
 
-            <h2 className="font-black uppercase leading-[0.8] tracking-[-0.07em]">
-              <span className="block text-[clamp(3.8rem,6.5vw,6.5rem)]">
-                Open
-              </span>
-
-              <span className="block text-[clamp(3.8rem,6.5vw,6.5rem)]">
-                Source
-              </span>
-
-              <span className="block text-[clamp(3.8rem,6.5vw,6.5rem)] text-[#f0443e]">
-                IRL.
-              </span>
+            <h2 className="text-[clamp(3.5rem,8vw,8rem)] font-black uppercase leading-[0.82] tracking-[-0.08em]">
+              One Day.
+              <span className="block text-[#7ec8ed]">Many Things</span>
+              <span className="block">To Build.</span>
             </h2>
           </div>
 
-          <div className="max-w-2xl lg:pb-2">
-            <p className="text-2xl font-black leading-[1.08] tracking-[-0.035em] md:text-3xl">
-              A day built around the people, projects, and ideas that make
-              open source happen.
-            </p>
-
-            <p className="mt-6 max-w-xl font-mono text-sm leading-7 text-[#f5f0df]/55">
-              Hacktoberfest Meetup — Phagwara brings the global open source
-              celebration into an in-person community experience at Lovely
-              Professional University.
-            </p>
-          </div>
+          <p className="max-w-lg text-base leading-7 text-white/65 sm:text-lg sm:leading-8 lg:justify-self-end">
+            A day of open-source learning, AI, cloud technology, and hands-on
+            collaboration. Come curious, leave with new ideas and connections.
+          </p>
         </div>
 
-        <div className="mt-16 border-y-2 border-[#f5f0df]/25">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4">
-            {details.map((item, index) => (
-              <div
-                key={item.number}
-                className={`relative min-h-[210px] p-7 ${
-                  index !== details.length - 1
-                    ? "border-b border-[#f5f0df]/15 md:border-r lg:border-b-0"
-                    : ""
-                }`}
-              >
-                <div className="flex items-start justify-between">
-                  <span className="font-mono text-[9px] font-bold tracking-[0.2em] text-[#f5f0df]/30">
-                    {item.number}
-                  </span>
-
-                  <span
-                    className="h-3 w-3"
-                    style={{ backgroundColor: item.accent }}
-                  />
-                </div>
-
-                <div className="mt-16">
-                  <p className="font-mono text-[8px] font-bold uppercase tracking-[0.3em] text-[#f5f0df]/40">
-                    {item.label}
-                  </p>
-
-                  <p className="mt-3 max-w-[220px] text-lg font-black uppercase leading-tight tracking-[-0.025em]">
-                    {item.value}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
+        <div className="grid border-b border-white/20 sm:grid-cols-3">
+          {details.map((item, index) => (
+            <div
+              key={item.label}
+              className={`py-5 sm:pr-5 ${
+                index !== details.length - 1
+                  ? "border-b border-white/10 sm:border-b-0 sm:border-r sm:pl-5"
+                  : "sm:pl-5"
+              } ${index === 0 ? "sm:pl-0" : ""}`}
+            >
+              <p className="font-mono text-[10px] font-bold tracking-[0.15em] text-[#ffc329]">
+                {item.label}
+              </p>
+              <p className="mt-2 text-sm font-semibold leading-6 sm:text-base">
+                {item.value}
+              </p>
+            </div>
+          ))}
         </div>
 
-        <div className="mt-16 grid gap-10 lg:grid-cols-[1.2fr_0.8fr]">
+        <div className="grid gap-12 pt-10 lg:grid-cols-[0.7fr_1.3fr] lg:gap-16 lg:pt-14">
           <div>
-            <p className="font-mono text-[9px] font-bold uppercase tracking-[0.3em] text-[#f5b82e]">
-              What happens here
+            <p className="mb-3 font-mono text-xs font-bold uppercase tracking-[0.15em] text-[#7ec8ed]">
+              What you'll explore
             </p>
 
-            <div className="mt-7 grid gap-0 border-y border-[#f5f0df]/15">
-              {experiences.map((item, index) => (
+            <h3 className="max-w-md text-3xl font-black uppercase leading-[0.95] tracking-[-0.06em] sm:text-4xl">
+              From first commit to cloud deployment.
+            </h3>
+
+            <p className="mt-4 max-w-md text-sm leading-6 text-white/55">
+              Explore practical developer skills, learn from the community, and
+              make time to build together.
+            </p>
+
+            <div className="mt-7 border-t border-white/20">
+              {tracks.map((track, index) => (
                 <div
-                  key={item.title}
-                  className={`grid gap-5 py-6 sm:grid-cols-[180px_1fr] sm:items-center ${
-                    index !== experiences.length - 1
-                      ? "border-b border-[#f5f0df]/15"
-                      : ""
-                  }`}
+                  key={track}
+                  className="flex items-center gap-4 border-b border-white/15 py-3.5"
                 >
-                  <div className="flex items-center gap-4">
-                    <span
-                      className="h-3 w-3 shrink-0"
-                      style={{ backgroundColor: item.accent }}
-                    />
-
-                    <h3 className="text-xl font-black uppercase tracking-[-0.035em]">
-                      {item.title}
-                    </h3>
-                  </div>
-
-                  <p className="max-w-xl font-mono text-xs leading-6 text-[#f5f0df]/50">
-                    {item.text}
-                  </p>
+                  <span
+                    className={`h-2.5 w-2.5 shrink-0 ${
+                      index % 3 === 0
+                        ? "bg-[#ef3028]"
+                        : index % 3 === 1
+                          ? "bg-[#ffc329]"
+                          : "bg-[#7ec8ed]"
+                    }`}
+                  />
+                  <span className="text-sm font-medium text-white/85">
+                    {track}
+                  </span>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="relative overflow-hidden border border-[#f5f0df]/20 bg-[#0b4b42] p-8">
-            <div className="absolute right-0 top-0 h-16 w-16 bg-[#f5b82e] [clip-path:polygon(100%_0,100%_100%,0_0)]" />
+          <div id="schedule" className="scroll-mt-8">
+            <div className="mb-5 flex flex-wrap items-end justify-between gap-3">
+              <div>
+                <p className="mb-2 font-mono text-xs font-bold uppercase tracking-[0.15em] text-[#7ec8ed]">
+                  Plan your day
+                </p>
+                <h3 className="text-3xl font-black uppercase tracking-[-0.06em] sm:text-4xl">
+                  The Schedule<span className="text-[#ffc329]">.</span>
+                </h3>
+              </div>
 
-            <p className="font-mono text-[8px] font-bold uppercase tracking-[0.3em] text-[#f5f0df]/40">
-              Hosted with
-            </p>
-
-            <h3 className="mt-5 max-w-sm text-2xl font-black uppercase leading-[0.9] tracking-[-0.045em] md:text-3xl">
-              AWS Student
-              <br />
-              <span className="text-[#7ec8ed]">Builder Group</span>
-              <br />
-              at LPU
-            </h3>
-
-            <div className="mt-8 border-t border-[#f5f0df]/15 pt-6">
-              <p className="font-mono text-xs leading-6 text-[#f5f0df]/50">
-                Hosted at Lovely Professional University, Phagwara.
-              </p>
-
-              <a
-                href="https://awslpu.in"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-5 inline-block font-mono text-[9px] font-bold uppercase tracking-[0.2em] text-[#f5b82e] transition-colors hover:text-[#f5f0df]"
-              >
-                Visit AWS SBG ↗
-              </a>
+              <span className="font-mono text-xs text-white/50">
+                09:30 — 16:30
+              </span>
             </div>
+
+            <div className="border-t-2 border-[#7ec8ed]">
+              {sessions.map((session, index) => (
+                <div
+                  key={session.time}
+                  className="grid grid-cols-[92px_1fr] gap-3 border-b border-white/15 py-4 sm:grid-cols-[125px_1fr] sm:gap-5 sm:py-5"
+                >
+                  <span className="pt-1 font-mono text-[10px] font-bold text-[#ffc329] sm:text-xs">
+                    {session.time}
+                  </span>
+
+                  <div className="min-w-0">
+                    <h4
+                      className={`text-sm font-bold leading-6 sm:text-base ${
+                        index === 5 ? "text-[#7ec8ed]" : "text-white"
+                      }`}
+                    >
+                      {session.title}
+                    </h4>
+
+                    <span className="mt-1.5 inline-block font-mono text-[9px] font-bold tracking-[0.12em] text-white/40">
+                      {session.tag}
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <p className="mt-4 text-xs leading-5 text-white/40">
+              Proposed schedule. Session details and timings may change.
+            </p>
           </div>
         </div>
-
-        <div className="mt-14 flex flex-col gap-4 border-t border-[#f5f0df]/15 pt-6 sm:flex-row sm:items-center sm:justify-between">
-          <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-[#f5f0df]/35">
-            Hacktoberfest Meetup — Phagwara
-          </p>
-
-          <p className="font-mono text-[9px] uppercase tracking-[0.2em] text-[#f5f0df]/35">
-            23 · 10 · 2026
-          </p>
-        </div>
       </div>
-
-      <div className="pointer-events-none absolute right-0 top-24 h-20 w-20 bg-[#f5b82e] [clip-path:polygon(100%_0,100%_100%,0_100%)]" />
-
-      <div className="pointer-events-none absolute bottom-20 left-[-18px] h-16 w-16 rounded-full border-[9px] border-[#7ec8ed]/30" />
     </section>
   );
 }

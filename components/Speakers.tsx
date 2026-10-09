@@ -1,122 +1,83 @@
-export default function Speakers() {
-  const speakers = [
-    {
-      number: "01",
-      name: "Speaker 01",
-      role: "Open Source Contributor",
-      topic: "Session topic coming soon",
-      accent: "#f5b82e",
-    },
-    {
-      number: "02",
-      name: "Speaker 02",
-      role: "Developer / Builder",
-      topic: "Session topic coming soon",
-      accent: "#7ec8ed",
-    },
-    {
-      number: "03",
-      name: "Speaker 03",
-      role: "Open Source Contributor",
-      topic: "Session topic coming soon",
-      accent: "#f0443e",
-    },
-  ];
+const registrationUrl =
+  "https://events.mlh.com/events/15402-hacktoberfest-meetup-phagwara-x-aws-student-builder-group-at-lpu";
 
+export default function Speakers() {
   return (
     <section
       id="speakers"
-      className="relative overflow-hidden bg-[#063c35] px-6 py-32 text-[#f5f0df] lg:px-12"
+      className="bg-white px-5 py-14 text-[#171717] sm:px-8 sm:py-20 lg:px-14 lg:py-24"
     >
-      <div className="mx-auto max-w-7xl">
-        <div className="grid gap-10 lg:grid-cols-[1fr_0.8fr] lg:items-end">
+      <div className="mx-auto max-w-[1600px]">
+        <div className="grid gap-8 lg:grid-cols-[1fr_0.8fr] lg:items-end lg:gap-16">
           <div>
-            <p className="mb-6 font-mono text-[10px] font-bold uppercase tracking-[0.35em] text-[#7ec8ed]">
-              04 - Speakers
+            <p className="mb-5 inline-block bg-[#7ec8ed] px-3 py-1.5 font-mono text-[10px] font-bold uppercase tracking-[0.15em] sm:text-xs">
+              Speakers & Community
             </p>
 
-            <h2 className="font-black uppercase leading-[0.78] tracking-[-0.07em]">
-              <span className="block text-[clamp(4rem,7vw,7rem)]">
-                Meet The
-              </span>
-
-              <span className="block text-[clamp(4rem,7vw,7rem)] text-[#f0443e]">
-                Builders.
-              </span>
+            <h2 className="text-[clamp(3.5rem,8vw,7rem)] font-black uppercase leading-[0.84] tracking-[-0.075em]">
+              Meet The
+              <span className="block text-[#2055a5]">Builders.</span>
             </h2>
           </div>
 
-          <p className="max-w-md border-l-2 border-[#f5b82e] pl-5 font-mono text-xs leading-6 text-[#f5f0df]/50 lg:mb-2">
-            People who build, contribute, teach, and share what they've
-            learned. Speaker lineup and session details will be announced
-            soon.
+          <p className="max-w-lg text-base leading-7 text-black/65 sm:text-lg sm:leading-8 lg:justify-self-end">
+            Real experiences, lessons learned, and ideas worth sharing.
+            Discover perspectives on open source, AI, cloud technology, and
+            growing as a developer.
           </p>
         </div>
 
-        <div className="mt-20 border-t border-[#f5f0df]/25">
-          {speakers.map((speaker) => (
-            <div
-              key={speaker.number}
-              className="group grid gap-6 border-b border-[#f5f0df]/20 py-8 transition-colors hover:bg-[#0b4b42] md:grid-cols-[70px_70px_1fr_1fr_auto] md:items-center md:gap-8 md:px-5"
-            >
-              <span className="font-mono text-xs font-bold tracking-[0.2em] text-[#f5f0df]/30">
-                {speaker.number}
+        <div className="mt-10 grid gap-0 border-y-2 border-black md:grid-cols-[0.85fr_1.15fr]">
+          <div className="flex min-h-[250px] flex-col justify-between bg-[#2055a5] p-6 text-white sm:min-h-[300px] sm:p-9">
+            <div className="flex items-start justify-between gap-4">
+              <span className="font-mono text-[10px] font-bold uppercase tracking-[0.15em] text-white/70">
+                The people behind the ideas
               </span>
-
-              <span
-                className="h-12 w-12"
-                style={{ backgroundColor: speaker.accent }}
-              />
-
-              <div>
-                <h3 className="text-2xl font-black uppercase tracking-[-0.04em] md:text-3xl">
-                  {speaker.name}
-                </h3>
-
-                <p className="mt-2 font-mono text-[9px] font-bold uppercase tracking-[0.2em] text-[#7ec8ed]">
-                  {speaker.role}
-                </p>
-              </div>
-
-              <div>
-                <p className="font-mono text-[9px] uppercase tracking-[0.25em] text-[#f5f0df]/35">
-                  Speaking on
-                </p>
-
-                <p className="mt-2 text-sm font-bold uppercase tracking-[-0.01em] text-[#f5f0df]/70">
-                  {speaker.topic}
-                </p>
-              </div>
-
-              <span className="font-mono text-lg text-[#f5b82e] transition-transform group-hover:translate-x-1">
+              <span aria-hidden="true" className="text-3xl font-black text-[#ffc329]">
                 ↗
               </span>
             </div>
-          ))}
-        </div>
 
-        <div className="mt-16 grid gap-8 border-t border-[#f5f0df]/15 pt-8 md:grid-cols-[1fr_auto] md:items-center">
-          <div>
-            <p className="font-mono text-[9px] font-bold uppercase tracking-[0.3em] text-[#f5f0df]/35">
-              More to come
-            </p>
-
-            <p className="mt-3 max-w-xl text-xl font-black uppercase leading-tight tracking-[-0.03em] md:text-2xl">
-              The lineup will grow as the meetup gets closer.
-            </p>
+            <div>
+              <p className="text-3xl font-black uppercase leading-tight tracking-[-0.05em] sm:text-4xl">
+                Learn from
+                <br />
+                people who build.
+              </p>
+              <p className="mt-3 max-w-sm text-sm leading-6 text-white/75">
+                Practical knowledge is better when it comes with real-world
+                experience.
+              </p>
+            </div>
           </div>
 
-          <div className="flex items-center gap-2">
-            <span className="h-3 w-3 bg-[#f0443e]" />
-            <span className="h-3 w-8 bg-[#f5b82e]" />
-            <span className="h-3 w-3 bg-[#7ec8ed]" />
+          <div className="flex min-h-[250px] flex-col justify-center p-6 sm:min-h-[300px] sm:p-9 md:border-l-2 md:border-black">
+            <p className="font-mono text-xs font-bold uppercase tracking-[0.15em] text-[#ef3028]">
+              Lineup update
+            </p>
+
+            <h3 className="mt-4 text-3xl font-black uppercase leading-[0.95] tracking-[-0.06em] sm:text-4xl">
+              Speakers
+              <span className="block text-[#2055a5]">Coming Soon.</span>
+            </h3>
+
+            <p className="mt-4 max-w-md text-sm leading-6 text-black/60">
+              We're preparing the session lineup. Confirmed speakers and
+              session details will be published here as they're announced.
+            </p>
+
+            <a
+              href={registrationUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-flex w-fit items-center gap-3 border-2 border-black px-5 py-3 font-mono text-[10px] font-bold uppercase tracking-[0.12em] transition-colors hover:bg-[#ffc329]"
+            >
+              Join the Meetup
+              <span aria-hidden="true">↗</span>
+            </a>
           </div>
         </div>
       </div>
-
-      <div className="pointer-events-none absolute right-[-30px] top-36 h-24 w-24 rotate-45 border-[10px] border-[#f5b82e]/30" />
-
-      <div className="pointer-events-none absolute bottom-24 left-0 h-20 w-20 bg-[#7ec8ed] [clip-path:polygon(0_0,100%_100%,0_100%)]" />
     </section>
   );
 }
