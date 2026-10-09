@@ -110,7 +110,7 @@ export default function Hero() {
               </a>
 
               <a
-                href="YOUR_CALL_FOR_SPEAKERS_URL"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdxqxN5dsU1LIJ6xw5M574EY92OE7Chq9ythi6O1HAvMSnE2Q/viewform?usp=dialog"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex w-fit items-center gap-5 border-2 border-[#2055a5] px-6 py-[14px] font-mono text-[10px] font-bold uppercase tracking-[0.13em] text-[#2055a5] transition-colors hover:bg-[#2055a5] hover:text-white sm:text-xs"
